@@ -1,0 +1,1 @@
+This repository is meant to be the place for small miscellaneous code/projects I think are interesting.
