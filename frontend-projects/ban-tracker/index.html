@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Marvel Rivals Database</title>
+</head>
+<body>
+    <div id="header">Your Ban List</div>
+    <div id="content">
+        <div id="content-header">
+            <div class="tab active">Player bans</div>
+            <!-- <div class="tab">Dodge list</div> -->
+            <div class="tab">Add a player</div>
+        </div>
+        <div id="content-body">
+            <div id="content-players">
+                <input id="search" placeholder="Search"></input>
+                <div class="player-header">
+                    <div class="player-name">Player</div>
+                    <div class="player-character">Character</div>
+                    <button class="player-remove" style="opacity: 0;"></button>
+                </div>
+                <div id="player-list">
+                    <div class="player">
+                        <div class="player-name">Player 1</div>
+                        <div class="player-character">Character 1</div>
+                        <button class="player-remove">+</button>
+                    </div>
+                </div>
+
+           
+            </div>
+            <!-- <div id="content-dodge">
+                hi
+
+            </div> -->
+            <div id="content-add">
+                <form id="player-ban-form" method="post">
+                    <input class="form-input" type="text" name="player" placeholder="Player name">
+                    <input class="form-input" type="text" name="character" placeholder="Character">
+                    <input class="form-input-button" type="submit" value="+">
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
