@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: aliceblue;
+}
+
+.box {
+    background-color: beige;
+    
+}
+
+#main {
+    height: 90vh;
+    width: 75vw;
+    display: grid;
+    grid-template-areas:
+    "timer timer score"
+    "content content content"
+    "content content content"
+    "content content content"
+    "content content content"
+    "content content content"
+    "content content content"
+    "content content content";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 10px
+}
+
+#time-box {
+    grid-area: timer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+}
+
+#score-box {
+    grid-area: score;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+}
+
+#content-box {
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14vw;
+    gap: 8px;
+
+}
+
+#answer-box {
+    height: 18vh;
+    width: 18vw;
+    font-size: 12vw;
+    padding: 4px;
+    background-color: beige;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-bottom: 8px;
+}
+
+#answer-box:focus {
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
